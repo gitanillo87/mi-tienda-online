@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <h1>Mi Tienda Online</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Catálogo</a>
+            <a href="#contacto">Contacto</a>
+            <span id="carrito">Carrito: 0</span>
+        </nav>
+    </header>
+
+    <!-- Sección de filtros -->
+    <section id="filtros">
+        <h2>Filtrar Productos</h2>
+        <input type="text" id="busqueda" placeholder="Buscar por nombre...">
+        <select id="categoria">
+            <option value="">Todas las categorías</option>
+            <option value="ropa">Ropa</option>
+            <option value="calzado">Calzado</option>
+            <option value="accesorios">Accesorios</option>
+        </select>
+        <label for="precio-min">Precio mínimo:</label>
+        <input type="number" id="precio-min" placeholder="0">
+        <label for="precio-max">Precio máximo:</label>
+        <input type="number" id="precio-max" placeholder="1000">
+        <button id="aplicar-filtros">Aplicar Filtros</button>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="productos">
+        <div class="producto" data-categoria="ropa" data-precio="20">
+            <img src="imagenes/producto1.jpg" alt="Producto 1">
+            <h3 class="nombre">Camiseta Azul</h3>
+            <p>$20.00</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="producto" data-categoria="calzado" data-precio="50">
+            <img src="imagenes/producto2.jpg" alt="Producto 2">
+            <h3 class="nombre">Zapatillas Deportivas</h3>
+            <p>$50.00</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="producto" data-categoria="accesorios" data-precio="15">
+            <img src="imagenes/producto3.jpg" alt="Producto 3">
+            <h3 class="nombre">Gorra Negra</h3>
+            <p>$15.00</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+        <div class="producto" data-categoria="ropa" data-precio="35">
+            <img src="imagenes/producto4.jpg" alt="Producto 4">
+            <h3 class="nombre">Chaqueta de Cuero</h3>
+            <p>$35.00</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Botón de PayPal -->
+    <div id="paypal-button-container"></div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

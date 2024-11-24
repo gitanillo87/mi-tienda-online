@@ -1,0 +1,105 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#carrito {
+    font-weight: bold;
+}
+
+/* Sección de filtros */
+#filtros {
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+#filtros input, #filtros select, #filtros button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    background: #fff;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background: #218838;
+}
+
+/* PayPal button container */
+#paypal-button-container {
+    margin: 20px;
+    text-align: center;
+}
